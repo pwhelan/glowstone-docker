@@ -8,7 +8,7 @@ USER glowstone
 WORKDIR /home/glowstone
 ADD run.py /home/glowstone/
 ADD glowstone.yml.dist /home/glowstone/
-RUN wget http://bamboo.gserv.me/browse/GLOW-SRV/latest/artifact/shared/Glowstone-JAR/glowstone-0.0.1-SNAPSHOT-remapped.jar -O /home/glowstone/glowstone.jar
+RUN wget https://bamboo.gserv.me/browse/GSPP-SRV/latest/artifact/shared/Version-Independent-Server-JAR/glowstone.jar -O /home/glowstone/glowstone.jar
 CMD /usr/bin/python run.py
 EXPOSE 25565
 
